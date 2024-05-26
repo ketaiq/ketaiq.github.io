@@ -26,44 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
         listItem.appendChild(description);
         publicationsList.appendChild(listItem);
     });
-
-
-    // Get all navbar links
-    var navLinks = document.querySelectorAll('.nav-link');
-
-    // Add click event listeners to each navbar link
-    navLinks.forEach(function(navLink) {
-        navLink.addEventListener('click', function() {
-            // Remove active class from all navbar links
-            navLinks.forEach(function(link) {
-                link.classList.remove('active');
-                link.removeAttribute('aria-current');
-            });
-
-            // Add active class to the clicked navbar link
-            this.classList.add('active');
-            this.setAttribute('aria-current', 'page');
-        });
-    });
-
-    // Highlight nav-link based on scroll position
-    window.addEventListener('scroll', function() {
-        var scrollPos = window.scrollY;
-        navLinks.forEach(function(navLink) {
-            var sectionId = navLink.getAttribute('href').slice(1);
-            var section = document.getElementById(sectionId);
-            if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
-                // Remove active class from all navbar links
-                navLinks.forEach(function(link) {
-                    link.classList.remove('active');
-                    link.removeAttribute('aria-current');
-                });
-                // Add active class to the navbar link corresponding to the section in view
-                navLink.classList.add('active');
-                this.setAttribute('aria-current', 'page');
-            }
-        });
-    });
 });
 
 

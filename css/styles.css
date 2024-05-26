@@ -14,6 +14,7 @@ body {
 
 main {
     flex: 1;
+    margin-top: 7rem;
 }
 
 section {
@@ -38,7 +39,6 @@ footer {
     color: #e32636 !important;
 }
 
-.external-links a {
+.nav-link i {
     font-size: 2rem;
-    padding: 0.1rem;
 }
