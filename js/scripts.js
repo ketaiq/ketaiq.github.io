@@ -1,3 +1,5 @@
+const PAGES = ["index.html", "publications.html", "teaching.html", "services.html", "awards.html"]
+
 document.addEventListener("DOMContentLoaded", () => {
     fetch_includes();
     if (window.location.pathname.endsWith('publications.html')) {
@@ -29,6 +31,10 @@ function fetch_includes() {
 function highlightCurrentPage() {
     // Get the current page's filename (e.g., "publications.html")
     const currentPage = window.location.pathname.split('/').pop();
+    if (!PAGES.includes(currentPage)) {
+        // Skip external resources
+        return;
+    }
     
     // Get all the navigation links in the navbar
     const navLinks = document.querySelectorAll('.nav-link');

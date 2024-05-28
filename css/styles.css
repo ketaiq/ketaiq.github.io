@@ -42,3 +42,19 @@ footer {
 .nav-link i {
     font-size: 2rem;
 }
+
+.circle-crop {
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the desired height to the same as width to make a square */
+    border-radius: 50%; /* This makes it a circle */
+    overflow: hidden; /* Hide anything that overflows the circle */
+    display: flex; /* Center the image */
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image */
+  }
+  
+  .circle-crop img {
+    width: 100%; /* Ensure the image takes up the full width of the container */
+    height: 100%; /* Ensure the image takes up the full height of the container */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+  }
