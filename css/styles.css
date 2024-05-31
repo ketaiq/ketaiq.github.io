@@ -36,9 +36,19 @@ footer {
 /* Custom style for active events on navigation bar. */
 .nav-link.active {
     font-weight: bold;
-    color: #e32636 !important;
+    color: #7D3C98 !important;
 }
 
 .nav-link i {
     font-size: 2rem;
+}
+
+a.custom-link {
+    text-decoration: none;
+    color: #8E44AD;
+}
+
+.custom-text-align {
+    text-align: justify;
+    font-size: 1.2rem;
 }
