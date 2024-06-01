@@ -15,6 +15,7 @@ body {
 main {
     flex: 1;
     margin-top: 7rem;
+    margin-bottom: 7rem;
 }
 
 section {
@@ -23,6 +24,7 @@ section {
 
 footer {
     color: #7B7D7D;
+    background-color: white;
     font-size: 0.8em;
     text-align: center;
     line-height: 1.3rem;
