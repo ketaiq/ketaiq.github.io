@@ -1,0 +1,32 @@
+<nav class="navbar fixed-top navbar-expand-sm bg-body-tertiary">
+  <div class="container-fluid mx-5">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/icon.png" alt="Ketai Qiu's icon" width="50" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto align-items-center">
+        <a href="/" {% if page.url=='/' %} class="nav-link active" aria-current="page" {% else %} class="nav-link" {%
+          endif %}>About</a>
+        <a href="publications.html" {% if page.url=='/publications.html' %} class="nav-link active" aria-current="page"
+          {% else %} class="nav-link" {% endif %}>Publications</a>
+        <a href="teaching.html" {% if page.url=='/teaching.html' %} class="nav-link active" aria-current="page" {% else
+          %} class="nav-link" {% endif %}>Teaching</a>
+        <a href="services.html" {% if page.url=='/services.html' %} class="nav-link active" aria-current="page" {% else
+          %} class="nav-link" {% endif %}>Services</a>
+        <a href="awards.html" {% if page.url=='/awards.html' %} class="nav-link active" aria-current="page" {% else %}
+          class="nav-link" {% endif %}>Awards</a>
+        <a class="nav-link disabled" aria-disabled="true">===== Follow me on =====></a>
+        <a class="nav-link" href="mailto:ketai.qiu@usi.ch"><i class="fa-regular fa-envelope"></i></a>
+        <a class="nav-link" href="https://scholar.google.com/citations?hl=en&user=dZBCN0YAAAAJ" target="_blank"><i
+            class="fa-brands fa-google-scholar"></i></a>
+        <a class="nav-link" href="https://github.com/ketaiq" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a class="nav-link" href="https://www.linkedin.com/in/ketai-qiu/" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
