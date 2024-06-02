@@ -21,17 +21,17 @@ title: "Ketai Qiu's publications"
                 </div>
 
                 <button class="btn btn-secondary pub-button me-2" type="button"
-                    onclick="openPDF({{ publication.doi }})">
+                    onclick="openPDF('{{ publication.doi }}')">
                     DOI
                 </button>
 
                 <button class="btn btn-secondary pub-button me-2" type="button"
-                    onclick="openPDF({{ publication.pdf }})">
+                    onclick="openPDF('{{ publication.pdf }}')">
                     PDF
                 </button>
 
                 <button class="btn btn-secondary pub-button me-2" type="button"
-                    onclick="openPDF({{ publication.bibtex }})">
+                    onclick="openPDF('{{ publication.bibtex }}')">
                     BibTex
                 </button>
             </div>
