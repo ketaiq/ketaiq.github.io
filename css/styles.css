@@ -54,3 +54,17 @@ a.custom-link {
 p.address {
     margin: 0px;
 }
+
+.custom-main {
+    max-width: 50rem;
+    padding: 0 1.5rem;
+}
+
+.publisher-badge {
+    background-color: #8E44AD;
+    min-width: 5rem;
+}
+
+.publisher-width {
+    min-width: 7rem;
+}
