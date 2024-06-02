@@ -1,23 +1,27 @@
 ---
 layout: default
 title: "Ketai Qiu's publications"
+years: ["2024"]
 ---
 <main>
     <div class="container custom-main">
         <h2>Publications</h2>
 
+        {% for year in page.years %}
         {% for publication in site.publications %}
 
-        <div class="row mb-5">
+        {% if year == publication.year %}
+
+        <div class="row py-3">
             <div class="col-1 publisher-width">
-                <h5><span class="badge text-white publisher-badge">{{ publication.short_name }}</span></h5>
+                <span class="badge text-white publisher-badge fs-6">{{ publication.short_name }}</span>
             </div>
 
             <div class="col">
                 <div class="row mb-1">
                     <p class="fira-sans-medium no-margin">{{ publication.title }}</p>
-                    <p class="no-margin">{{ publication.authors }}</p>
-                    <p class="no-margin small-font"><em>{{ publication.long_name }}</em></p>
+                    <p class="no-margin" style="font-size: 0.9rem">{{ publication.authors }}</p>
+                    <p class="no-margin" style="font-size: 0.9rem"><em>{{ publication.long_name }}</em></p>
                 </div>
 
                 <button class="btn btn-secondary pub-button me-2" type="button"
@@ -30,6 +34,15 @@ title: "Ketai Qiu's publications"
                     PDF
                 </button>
 
+                {% if publication.artifact %}
+
+                <button class="btn btn-secondary pub-button me-2" type="button"
+                    onclick="openPDF('{{ publication.artifact }}')">
+                    Artifact
+                </button>
+
+                {% endif %}
+
                 <button class="btn btn-secondary pub-button me-2" type="button"
                     onclick="openPDF('{{ publication.bibtex }}')">
                     BibTex
@@ -37,7 +50,16 @@ title: "Ketai Qiu's publications"
             </div>
         </div>
 
+        {% endif %}
         {% endfor %}
+
+        <div class="col fs-2 text-end text-body-tertiary">{{ year }}</div>
+
+        <hr class="my-1" />
+
+        {% endfor %}
+
+        <p class="pt-3">* denotes the corresponding author.</p>
 
         <p xmlns:cc="http://creativecommons.org/ns#">All available publications are licensed under <a
                 href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" class="custom-link"
