@@ -21,8 +21,8 @@ title: Ketai Qiu
         <div class="my-3 overflow-auto ps-3" style="max-height: 15rem;">
             {% for item in site.news reversed %}
             <div class="row mx-auto text-start py-2">
-                <div class="col-3 p-0 news-date-width">
-                    <span class="badge text-white news-badge fs-6 shadow">{{ item.date | date_to_string }}</span>
+                <div class="col-2 p-0 news-date-width">
+                    <span class="badge text-white news-badge fs-6 shadow">{{ item.date | date: "%b %Y" }}</span>
                 </div>
                 <div class="col">
                     <p>{{ item.text }}</p>

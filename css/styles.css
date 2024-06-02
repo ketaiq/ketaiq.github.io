@@ -67,7 +67,7 @@ p.no-margin {
 
 .news-badge {
     background-color: #27AE60;
-    min-width: 10rem;
+    min-width: 6rem;
 }
 
 .publisher-width {
@@ -75,7 +75,7 @@ p.no-margin {
 }
 
 .news-date-width {
-    min-width: 12rem;
+    min-width: 6rem;
 }
 
 .pub-button {
