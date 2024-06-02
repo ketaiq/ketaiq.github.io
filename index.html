@@ -4,8 +4,8 @@ title: Ketai Qiu
 ---
 <main>
     <div class="container text-center custom-main">
-        <div class="d-flex justify-content-center">
-            <img src="images/Ketai Qiu.jpg" class="rounded-3" alt="Portrait of Ketai Qiu" width="270">
+        <div class="d-flex justify-content-center mb-3">
+            <img src="images/Ketai Qiu.jpg" class="rounded-3 shadow" alt="Portrait of Ketai Qiu" width="270">
         </div>
 
         <div class="sedan-regular fs-1">Ketai Qiu</div>
@@ -16,7 +16,23 @@ title: Ketai Qiu
             <p class="no-margin">Switzerland &#x1f1e8;&#x1f1ed;</p>
         </div>
 
-        <div class="col mx-auto mt-3 about-text">
+        <h2 class="text-start py-1">News</h2>
+
+        <div class="my-3 overflow-auto ps-3" style="max-height: 15rem;">
+            {% for item in site.news reversed %}
+            <div class="row mx-auto text-start py-2">
+                <div class="col-3 p-0 news-date-width">
+                    <span class="badge text-white news-badge fs-6 shadow">{{ item.date | date_to_string }}</span>
+                </div>
+                <div class="col">
+                    <p>{{ item.text }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <h2 class="text-start pt-5">Bio</h2>
+        <div class="col mx-auto my-3 about-text">
             <p>
                 Ketai Qiu is a PhD student in Informatics supervised by Prof.
                 <a href="https://www.inf.usi.ch/faculty/pezze/" class="custom-link" target="_blank"

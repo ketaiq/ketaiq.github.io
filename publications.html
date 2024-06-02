@@ -8,7 +8,7 @@ years: ["2024"]
         <h2>Publications</h2>
 
         {% for year in page.years %}
-        {% for publication in site.publications %}
+        {% for publication in site.publications reversed %}
 
         {% if year == publication.year %}
 

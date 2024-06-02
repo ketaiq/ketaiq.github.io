@@ -7,4 +7,5 @@ doi: "https://dl.acm.org/doi/10.1145/3639478.3639802"
 pdf: "resources/pdf/Ketai-Qiu-ICSE2024-Doctoral-Symposium-camera-ready.pdf"
 bibtex: "resources/bibtex/Ketai-Qiu-ICSE2024-Doctoral-Symposium-camera-ready.bib"
 year: "2024"
+date: "23 December 2023"
 ---

@@ -64,3 +64,4 @@ kramdown:
 
 collections:
   - publications
+  - news
