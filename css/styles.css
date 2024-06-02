@@ -51,8 +51,12 @@ a.custom-link {
     font-size: 1.2rem;
 }
 
-p.address {
+p.no-margin {
     margin: 0px;
+}
+
+p.small-font {
+    font-size: 0.8rem !important;
 }
 
 .custom-main {
@@ -66,5 +70,10 @@ p.address {
 }
 
 .publisher-width {
-    min-width: 7rem;
+    min-width: 6rem;
+}
+
+.pub-button {
+    --bs-btn-padding-y: .1rem;
+    --bs-btn-padding-x: .5rem;
 }

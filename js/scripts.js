@@ -1,31 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    if (window.location.pathname.endsWith('publications.html')) {
-        fetch_publications();
-    }
-});
-
-function fetch_publications() {
-    fetch('resources/publications.json')
-        .then(response => response.json())
-        .then(publications => {
-            const publicationsList = document.getElementById('publications-list');
-            publications.forEach(pub => {
-                const listItem = document.createElement('li');
-                const link = document.createElement('a');
-                link.href = pub.link;
-                link.textContent = pub.title;
-                link.target = "_blank";
-                link.classList.add("custom-link");
-                listItem.appendChild(link);
-                const description = document.createElement('p');
-                description.textContent = pub.description;
-                listItem.appendChild(description);
-                publicationsList.appendChild(listItem);
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching publications:', error);
-        });
+function openPDF(url) {
+    window.open(url, '_blank');
 }
 
 function adjustMainContentMargin() {
