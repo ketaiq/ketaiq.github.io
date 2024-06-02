@@ -3,8 +3,47 @@ layout: default
 title: "Ketai Qiu's teaching"
 ---
 <main>
-    <div class="container">
+    <div class="container custom-main">
         <h2>Teaching</h2>
 
+        {% for teaching in site.teachings reversed %}
+        <div class="card my-3">
+            <div class="card-body">
+                <div class="card-title fs-5">
+                    <a href="{{ teaching.course_link }}" target="_blank" class="custom-link"
+                        rel="noopener noreferrer">{{ teaching.course_name }}</a>
+                </div>
+                <div class="row">
+                    <div class="col-3">Role</div>
+                    <div class="col-3 fira-sans-medium">{{ teaching.role }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Level</div>
+                    <div class="col-3 fira-sans-medium">{{ teaching.level }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Instructor</div>
+                    <div class="col-3 fira-sans-medium">Prof. <a href="{{ teaching.instructor_link }}" target="_blank"
+                            class="custom-link" rel="noopener noreferrer">{{ teaching.instructor_name }}</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Academic year</div>
+                    <div class="col-3 fira-sans-medium">{{ teaching.academic_year }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Semester</div>
+                    <div class="col-3 fira-sans-medium">{{ teaching.semester }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">ECTS</div>
+                    <div class="col-3 fira-sans-medium">{{ teaching.ects }}</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Language</div>
+                    <div class="col-3 fira-sans-medium">{{ teaching.language }}</div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </main>

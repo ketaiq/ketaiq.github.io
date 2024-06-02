@@ -14,7 +14,7 @@ years: ["2024"]
 
         <div class="row py-3">
             <div class="col-1 publisher-width">
-                <span class="badge text-white publisher-badge fs-6">{{ publication.short_name }}</span>
+                <span class="badge text-white publisher-badge fs-6 shadow">{{ publication.short_name }}</span>
             </div>
 
             <div class="col">
@@ -24,26 +24,26 @@ years: ["2024"]
                     <p class="no-margin" style="font-size: 0.9rem"><em>{{ publication.long_name }}</em></p>
                 </div>
 
-                <button class="btn btn-secondary pub-button me-2" type="button"
+                <button class="btn btn-secondary pub-button me-2 shadow" type="button"
                     onclick="openPDF('{{ publication.doi }}')">
                     DOI
                 </button>
 
-                <button class="btn btn-secondary pub-button me-2" type="button"
+                <button class="btn btn-secondary pub-button me-2 shadow" type="button"
                     onclick="openPDF('{{ publication.pdf }}')">
                     PDF
                 </button>
 
                 {% if publication.artifact %}
 
-                <button class="btn btn-secondary pub-button me-2" type="button"
+                <button class="btn btn-secondary pub-button me-2 shadow" type="button"
                     onclick="openPDF('{{ publication.artifact }}')">
                     Artifact
                 </button>
 
                 {% endif %}
 
-                <button class="btn btn-secondary pub-button me-2" type="button"
+                <button class="btn btn-secondary pub-button me-2 shadow" type="button"
                     onclick="openPDF('{{ publication.bibtex }}')">
                     BibTex
                 </button>
