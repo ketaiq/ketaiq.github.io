@@ -22,6 +22,20 @@ years: ["2024"]
                     <p class="fira-sans-medium no-margin">{{ publication.title }}</p>
                     <p class="no-margin" style="font-size: 0.9rem">{{ publication.authors }}</p>
                     <p class="no-margin" style="font-size: 0.9rem"><em>{{ publication.long_name }}</em></p>
+                    {% if publication.media_names and publication.media_links %}
+                    <p class="no-margin" style="font-size: 0.9rem">🚀 This paper received widespread media attention on
+                        {% for media_name in publication.media_names %}
+                        {% if forloop.last %}
+                        and
+                        {% endif %}
+                        {% unless forloop.first or forloop.last %}
+                        ,
+                        {% endunless %}
+                        <a href="{{ publication.media_links[forloop.index0] }}" class="custom-link" target="_blank"
+                            rel="noopener noreferrer">{{ media_name }}</a>
+                        {% endfor %}
+                    </p>
+                    {% endif %}
                 </div>
 
                 <button class="btn btn-secondary pub-button me-2 shadow" type="button"
