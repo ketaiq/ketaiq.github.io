@@ -1,0 +1,18 @@
+@article{10.1145/3660794,
+author = {Denaro, Giovanni and El Moussa, Noura and Heydarov, Rahim and Lomio, Francesco and Pezz\`{e}, Mauro and Qiu, Ketai},
+title = {Predicting Failures of Autoscaling Distributed Applications},
+year = {2024},
+issue_date = {July 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {1},
+number = {FSE},
+url = {https://doi.org/10.1145/3660794},
+doi = {10.1145/3660794},
+abstract = {Predicting failures in production environments allows service providers to activate countermeasures that prevent harming the users of the applications. The most successful approaches predict failures from error states that the current approaches identify from anomalies in time series of fixed sets of KPI values collected at runtime. They cannot handle time series of KPI sets with size that varies over time. Thus these approaches work with applications that run on statically configured sets of components and computational nodes, and do not scale up to the many popular cloud applications that exploit autoscaling.    This paper proposes Preface, a novel approach to predict failures in cloud applications that exploit autoscaling. Preface originally augments the neural-network-based failure predictors successfully exploited to predict failures in statically configured applications, with a Rectifier layer that handles KPI sets of highly variable size as the ones collected in cloud autoscaling applications, and reduces those KPIs to a set of rectified-KPIs of fixed size that can be fed to the neural-network predictor. The Preface Rectifier computes the rectified-KPIs as descriptive statistics of the original KPIs, for each logical component of the target application. The descriptive statistics shrink the highly variable sets of KPIs collected at different timestamps to a fixed set of values compatible with the input nodes of the neural-network failure predictor. The neural network can then reveal anomalies that correspond to error states, before they propagate to failures that harm the users of the applications. The experiments on both a commercial application and a widely used academic exemplar confirm that Preface can indeed predict many harmful failures early enough to activate proper countermeasures.},
+journal = {Proc. ACM Softw. Eng.},
+month = {jul},
+articleno = {87},
+numpages = {22},
+keywords = {Failure Prediction, Fault Localization, Kubernetes}
+}
