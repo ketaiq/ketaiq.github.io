@@ -42,11 +42,13 @@ years: ["2024"]
                     onclick="openPDF('{{ publication.doi }}')">
                     DOI
                 </button>
-
+                
+                {% if publication.pdf %}
                 <button class="btn btn-secondary pub-button me-2 shadow" type="button"
                     onclick="openPDF('{{ publication.pdf }}')">
                     PDF
                 </button>
+                {% endif %}
 
                 {% if publication.artifact %}
 
