@@ -5,6 +5,23 @@ title: "Ketai Qiu's services"
 <main>
     <div class="container custom-main">
         <h2>Services</h2>
-        I'm working hard to serve the research community ;)
+        {% for iteritem in site.services %}
+        <div class="card my-3">
+            <div class="card-body">
+                <div class="card-title fs-5">
+                    {{ iteritem.venueshort }}
+                </div>
+                <div class="col">{{ iteritem.venue }}</div>
+                <div class="row">
+                    <div class="col" style="max-width: 10rem;">Role</div>
+                    <div class="col fira-sans-medium">{{ iteritem.role }}</div>
+                </div>
+                <div class="row">
+                    <div class="col" style="max-width: 10rem;">Place</div>
+                    <div class="col fira-sans-medium">{{ iteritem.place }}</div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </main>
