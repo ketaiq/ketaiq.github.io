@@ -1,5 +1,5 @@
 ---
-short_name: "ICSE"
+short_name: "ICSE-DS"
 title: "Autonomic Testing: Testing with Scenarios from Production"
 authors: "Ketai Qiu"
 long_name: "IEEE/ACM 46th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion '24)"

@@ -1,5 +1,5 @@
 ---
-short_name: "FSE"
+short_name: "FSE-SRC"
 title: "Ever-Improving Test Suite by Leveraging Large Language Models"
 authors: "Ketai Qiu"
 long_name: "International Conference on the Foundations of Software Engineering (FSE '25): Student Research Competition"
