@@ -1,4 +1,4 @@
 ---
 title: "Academic Reviewer"
-description: "IEEE Transactions on Software Engineering and Springer Nature Computing"
+description: "IEEE Transactions on Software Engineering, Springer Nature Computing"
 ---
