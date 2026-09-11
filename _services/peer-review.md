@@ -1,4 +1,6 @@
 ---
 title: "Academic Reviewer"
-description: "IEEE Transactions on Software Engineering, Springer Nature Computing"
+venues:
+  - "IEEE Transactions on Software Engineering"
+  - "Springer Nature Computing"
 ---

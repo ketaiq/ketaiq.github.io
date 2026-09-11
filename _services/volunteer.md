@@ -1,4 +1,6 @@
 ---
 title: "Student Volunteer"
-description: "FSE 2024, FSE 2025"
+venues:
+  - "FSE 2024"
+  - "FSE 2025"
 ---

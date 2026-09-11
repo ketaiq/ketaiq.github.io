@@ -11,7 +11,11 @@ title: "Ketai Qiu's services"
                 <div class="card-title fs-5">
                     {{ iteritem.title }}
                 </div>
-                <div class="col">{{ iteritem.description }}</div>
+                <ul class="mb-0">
+                    {% for venue in iteritem.venues %}
+                    <li>{{ venue }}</li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
         {% endfor %}
