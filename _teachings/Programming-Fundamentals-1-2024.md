@@ -1,7 +1,7 @@
 ---
 date: "September 2024"
 course_name: "Programming Fundamentals 1"
-course_link: "https://search.usi.ch/en/courses/35268188/software-atelier-1-fundamentals-of-informatics"
+course_link: "https://search.usi.ch/it/corsi/35275733/programming-fundamentals-1"
 role: "Teaching Assistant"
 level: "Undergraduate"
 instructor_name: "Carlo A. Furia"
