@@ -1,0 +1,33 @@
+---
+layout: default
+title: "Ketai Qiu's supervised theses"
+---
+<main>
+    <div class="container custom-main">
+        <h2>Supervised Theses</h2>
+        {% assign sorted_theses = site.theses | sort: "year" | reverse %}
+        {% for thesis in sorted_theses %}
+        <div class="card my-3">
+            <div class="card-body">
+                <div class="card-title fs-5">{{ thesis.name }}</div>
+                <div class="row mb-1">
+                    <div class="col-sm-2 fw-semibold">Year</div>
+                    <div class="col-sm-10">{{ thesis.year }}</div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col-sm-2 fw-semibold">Degree</div>
+                    <div class="col-sm-10">{{ thesis.degree }}</div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col-sm-2 fw-semibold">Title</div>
+                    <div class="col-sm-10"><em>{{ thesis.title }}</em></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 fw-semibold">Abstract</div>
+                    <div class="col-sm-10">{{ thesis.intro }}</div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</main>
