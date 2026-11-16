@@ -88,3 +88,51 @@ p.no-margin {
     --bs-btn-padding-x: .5rem;
     font-size: .9rem;
 }
+
+/* BibTeX toggle button: highlighted while its panel is open. */
+.bibtex-toggle.active,
+.bibtex-toggle.active:hover,
+.bibtex-toggle.active:focus {
+    background-color: #8E44AD;
+    border-color: #7D3C98;
+    color: white;
+    box-shadow: 0 0 0 .2rem rgba(142, 68, 173, .35) !important;
+}
+
+/* Read-only BibTeX box shown below the publication buttons. */
+.bibtex-panel {
+    position: relative;
+    max-width: 50rem;
+}
+
+.bibtex-toolbar {
+    position: absolute;
+    top: .4rem;
+    right: .4rem;
+    display: flex;
+    gap: .3rem;
+    z-index: 1;
+}
+
+.bibtex-toolbar .btn {
+    --bs-btn-padding-y: .05rem;
+    --bs-btn-padding-x: .4rem;
+    --bs-btn-bg: white;
+    font-size: .8rem;
+}
+
+.bibtex-text {
+    font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: .8rem;
+    line-height: 1.4;
+    white-space: pre;
+    overflow-x: auto;
+    resize: vertical;
+    background-color: #f8f9fa !important;
+    padding-top: 2.2rem;
+}
+
+.bibtex-text:focus {
+    box-shadow: none;
+    border-color: #dee2e6;
+}

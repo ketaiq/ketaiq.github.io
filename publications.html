@@ -59,10 +59,24 @@ years: ["2026", "2025", "2024"]
 
                 {% endif %}
 
-                <button class="btn btn-secondary pub-button me-2 shadow" type="button"
-                    onclick="openPDF('{{ publication.bibtex }}')">
+                <button class="btn btn-secondary pub-button me-2 shadow bibtex-toggle" type="button"
+                    data-bibtex="{{ publication.bibtex }}" aria-expanded="false">
                     BibTex
                 </button>
+
+                <div class="bibtex-panel mt-2" hidden>
+                    <div class="bibtex-toolbar">
+                        <button class="btn btn-sm btn-outline-secondary bibtex-copy" type="button" title="Copy BibTeX">
+                            <i class="fa-regular fa-copy"></i> <span class="bibtex-copy-label">Copy</span>
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary bibtex-close" type="button" title="Close"
+                            aria-label="Close BibTeX">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <textarea class="form-control bibtex-text" readonly spellcheck="false"
+                        aria-label="BibTeX entry"></textarea>
+                </div>
             </div>
         </div>
 
